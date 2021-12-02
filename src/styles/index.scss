@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'Candy Beans';
+  src: url('./fonts/Candyshop.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
