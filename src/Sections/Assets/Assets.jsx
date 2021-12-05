@@ -7,7 +7,6 @@ const Assets = () => {
           <div className={`row animate`}>
             <img src={"assets/images/1.png"} alt={"santa-nft"} />
             <img src={"assets/images/2.png"} alt={"santa-nft"} />
-            <img src={"assets/images/4.png"} alt={"santa-nft"} />
             <img src={"assets/images/5.png"} alt={"santa-nft"} />
             <img src={"assets/images/6.png"} alt={"santa-nft"} />
             <img src={"assets/images/7.png"} alt={"santa-nft"} />
