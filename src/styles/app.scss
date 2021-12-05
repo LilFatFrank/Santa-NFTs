@@ -1,6 +1,44 @@
 .app {
-    height: 100%;
-    .img {
-        width: 100%;
+  height: 100%;
+  .img {
+    width: 100%;
+  }
+  .solamas-animation-content {
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    .rowContainer {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      .row {
+        display: flex;
+        gap: 10px;
+        &.animate {
+          animation: bannermove 100s alternate infinite;
+          animation-timing-function: linear;
+        }
+      }
     }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-168%, 0);
+  }
 }
