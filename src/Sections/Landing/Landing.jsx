@@ -20,14 +20,14 @@ const Landing = () => {
         }}
       >
         <a
-          href="https://twitter.com/secretsanta_nft"
+          href="http://discord.gg/x5efkZhTm4"
           target="_blank"
           rel="referrer noopener"
         >
           <Sprite id="discord" width={56} height={56} />
         </a>
         <a
-          href="http://discord.gg/x5efkZhTm4"
+          href="https://twitter.com/secretsanta_nft"
           target="_blank"
           rel="referrer noopener"
         >
