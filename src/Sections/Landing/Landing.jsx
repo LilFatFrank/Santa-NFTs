@@ -8,17 +8,7 @@ const Landing = () => {
         alt={"landing"}
         className={`img`}
       />
-      <div
-        style={{
-          width: "100%",
-          position: "absolute",
-          bottom: "50px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "20px"
-        }}
-      >
+      <div className={`landing-links`}>
         <a
           href="http://discord.gg/x5efkZhTm4"
           target="_blank"
