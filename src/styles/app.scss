@@ -1,5 +1,15 @@
 .app {
   height: 100%;
+  .about {
+    position: relative;
+    top: -15px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      top: -10px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      top: -5px;
+    }
+  }
   .landing-links {
     width: 100%;
     position: absolute;

@@ -3,8 +3,7 @@ const About = () => {
     <img
       src={`assets/images/About.png`}
       alt={"about"}
-      style={{ position: "relative", top: "-15px" }}
-      className={`img`}
+      className={`img about`}
     />
   );
 };
