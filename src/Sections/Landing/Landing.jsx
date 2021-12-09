@@ -23,6 +23,14 @@ const Landing = () => {
         >
           <Sprite id="twitter" width={56} height={56} />
         </a>
+        <a
+          href="https://twitter.com/secretsanta_nft"
+          target="_blank"
+          rel="referrer noopener"
+          className={`opensea`}
+        >
+          <Sprite id="opensea" width={56} height={56} />
+        </a>
       </div>
     </div>
   );

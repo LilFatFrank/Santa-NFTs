@@ -1,3 +1,5 @@
+import { Sprite } from '../../components'
+
 const Assets = () => {
   return (
     <div style={{ position: "relative", top: "-15px" }}>
@@ -37,6 +39,9 @@ const Assets = () => {
           </div>
         </div>
       </div>
+      <span className={`mint-button`}>
+        <Sprite id="mint-button" width={250} height={70} />
+      </span>
     </div>
   );
 };
