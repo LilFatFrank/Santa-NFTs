@@ -39,9 +39,6 @@ const Assets = () => {
           </div>
         </div>
       </div>
-      <span className={`mint-button`}>
-        <Sprite id="mint-button" width={250} height={70} />
-      </span>
     </div>
   );
 };

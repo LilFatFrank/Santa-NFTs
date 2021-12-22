@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Candy Beans';
-  src: url('./fonts/Candyshop.ttf') format('truetype');
+  src: url('./fonts/Candy\ Beans.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,6 +13,7 @@ body {
 body,
 #root {
   height: 100%;
+  font-family: 'Candy Beans';
 }
 
 * {

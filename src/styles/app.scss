@@ -11,12 +11,10 @@
     }
   }
   .landing-links {
-    width: 100%;
     position: absolute;
     bottom: 50px;
+    left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       svg {
@@ -25,6 +23,7 @@
       }
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
+      gap: 5px;
       bottom: 20px;
       svg {
         width: 18px;
@@ -34,6 +33,47 @@
     .opensea {
       cursor: not-allowed;
       opacity: 0.5;
+    }
+  }
+  .mint-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 33.5%;
+    }
+    .mint-content {
+      padding: 20px 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      flex-direction: column;
+      .count {
+        display: flex;
+        align-items: center;
+        flex-direction: center;
+        gap: 10px;
+      }
+      .count > div {
+        padding: 10px 15px;
+        background: #e44054;
+        border: 5px solid #2b7055;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+      }
+      .count > div:nth-child(2) {
+        padding: 10px 30px;
+        cursor: default;
+      }
     }
   }
   .img {
@@ -80,29 +120,6 @@
     }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       padding: 10px;
-    }
-  }
-  .mint-button {
-    position: absolute;
-    width: 100%;
-    bottom: 10%;
-    left: 0;
-    text-align: center;
-    cursor: not-allowed;
-    opacity: 0.5;
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      bottom: 10%;
-      svg {
-        width: 180px;
-        height: 40px;
-      }
-    }
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      bottom: 5%;
-      svg {
-        width: 120px;
-        height: 30px;
-      }
     }
   }
 }
