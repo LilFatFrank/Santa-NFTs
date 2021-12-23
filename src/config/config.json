@@ -1,0 +1,15 @@
+{
+    "CONTRACT_ADDRESS": "0x7cd8fd2ad0c09aee26ff02663eec1f25826f8bdc",
+    "SCAN_LINK": "https://polygonscan.com/token/0x7cd8fd2ad0c09aee26ff02663eec1f25826f8bdc",
+    "NETWORK": {
+        "NAME": "POLYGON",
+        "SYMBOL": "Matic",
+        "ID": 137
+    },
+    "NFT_NAME": "SECRET SANTA NFT",
+    "SYMBOL": "SANTA",
+    "MAX_SUPPLY": 6666,
+    "WEI_COST": 29000000000000000000,
+    "DISPLAY_COST": 29,
+    "GAS_LIMIT": 285000
+}
