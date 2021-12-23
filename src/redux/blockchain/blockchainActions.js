@@ -60,14 +60,6 @@ export const connect = () => {
               web3: web3
             })
           );
-          // Add listeners start
-          ethereum.on("accountsChanged", (accounts) => {
-            dispatch(updateAccount(accounts[0]));
-          });
-          ethereum.on("chainChanged", () => {
-            window.location.reload();
-          });
-          // Add listeners end
         } else {
           dispatch(connectFailed(`Change network to ${CONFIG.NETWORK.NAME}.`));
         }

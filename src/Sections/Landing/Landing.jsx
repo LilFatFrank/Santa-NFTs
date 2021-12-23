@@ -11,17 +11,17 @@ const Landing = () => {
   const blockchain = useSelector((state) => state.blockchain);
   const [claimingNft, setClaimingNft] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
-  const [chainId, setChainId] = useState(null);
   const [CONFIG, SET_CONFIG] = useState();
 
   useEffect(() => {
     SET_CONFIG(configResponse);
     dispatch(connect());
-
     if (window.ethereum) {
-      setChainId(window.ethereum.chainId);
       window.ethereum.on("chainChanged", (val) => {
-        setChainId(val);
+        window.location.reload();
+      });
+      window.ethereum.on("accountsChanged", (val) => {
+        window.location.reload();
       });
     }
   }, []);
@@ -114,7 +114,7 @@ const Landing = () => {
         <div className="mint-content">
           <Typography
             variant="h4"
-            style={{ color: "#2B7055" }}
+            style={{ color: "#2B7055", fontFamily: "'Candy Beans'" }}
             fontWeight={"bold"}
           >
             Mint is Live
@@ -139,12 +139,12 @@ const Landing = () => {
           <span
             style={{
               position: "relative",
-              ...(claimingNft || chainId !== "0x89"
+              ...(claimingNft || !(window.ethereum.chainId === "0x89")
                 ? { opacity: "0.5", cursor: "not-allowed" }
                 : { cursor: "pointer" })
             }}
             onClick={
-              claimingNft
+              claimingNft || !(window.ethereum.chainId === "0x89")
                 ? undefined
                 : () => {
                     claimNFTs();
@@ -152,7 +152,8 @@ const Landing = () => {
                   }
             }
           >
-            {chainId === "0x89" ? null : (
+            {window.ethereum.chainId &&
+            window.ethereum.chainId === "0x89" ? null : (
               <span style={{ position: "absolute", top: "-20px" }}>
                 Please switch to Matic Mainnet
               </span>
