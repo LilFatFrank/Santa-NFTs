@@ -139,12 +139,14 @@ const Landing = () => {
           <span
             style={{
               position: "relative",
-              ...(claimingNft || !(window.ethereum.chainId === "0x89")
+              ...(claimingNft ||
+              !(window.ethereum?.chainId && window.ethereum?.chainId === "0x89")
                 ? { opacity: "0.5", cursor: "not-allowed" }
                 : { cursor: "pointer" })
             }}
             onClick={
-              claimingNft || !(window.ethereum.chainId === "0x89")
+              claimingNft ||
+              !(window.ethereum?.chainId && window.ethereum?.chainId === "0x89")
                 ? undefined
                 : () => {
                     claimNFTs();
@@ -152,8 +154,8 @@ const Landing = () => {
                   }
             }
           >
-            {window.ethereum.chainId &&
-            window.ethereum.chainId === "0x89" ? null : (
+            {window.ethereum?.chainId &&
+            window.ethereum?.chainId === "0x89" ? null : (
               <span style={{ position: "absolute", top: "-20px" }}>
                 Please switch to Matic Mainnet
               </span>
