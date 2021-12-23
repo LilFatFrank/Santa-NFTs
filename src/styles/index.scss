@@ -1,7 +1,6 @@
-
 @font-face {
-  font-family: 'Candy Beans';
-  src: url('./fonts/Candy Beans.otf') format('opentype');
+  font-family: "Candy Beans";
+  src: url("./fonts/Candy\ Beans.otf") format("opentype");
   font-style: normal;
 }
 
@@ -12,7 +11,7 @@ body {
 body,
 #root {
   height: 100%;
-  font-family: 'Candy Beans';
+  font-family: "Candy Beans";
 }
 
 * {
@@ -20,6 +19,7 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
-*::after, *::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
